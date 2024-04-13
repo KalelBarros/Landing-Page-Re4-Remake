@@ -28,7 +28,7 @@ h2
 {
    float: right;
    margin-top: 10px;
-   margin-right: 20px;
+   
 }
 
 .parallax
@@ -36,7 +36,7 @@ h2
    display: flex;
    flex-direction: column;
    justify-content: center;
-   height: 85vh !important;
+   height: 85%;
    width: 100%;
    position: relative;
    overflow: hidden;
@@ -51,7 +51,7 @@ h2
 {
    content: "";
    width: inherit;
-   height: inherit;
+   height: 100%;
    position: absolute;
    z-index: 8;
    background:linear-gradient(180deg, black, transparent, black );
@@ -75,17 +75,31 @@ h2
     background-color: black;
     border-radius: 20px;
     border: 2px solid #c0192a;
-    margin-top: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.navigationBar ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
 .navigationBar ul li
 {
-   display: inline-block;
    margin-top: 5px;
    margin-bottom: 5px;
-   margin-left: 5rem;
+   margin-right: -30px;
+}
+
+.navigationBar ul li:last-child 
+{
+    margin-right: 0;
 }
 
 .navigationBar ul li a
@@ -183,5 +197,27 @@ input
     border-radius: 5px;
     width: 30%;
     height: 40px;
-    
+}
+
+.parallax ul
+{
+    margin-left: -3%; 
+    margin-top: 1%;
+}
+
+@media (max-width: 780px)
+{
+    .plataformas
+    {
+        width: 13%;
+        height: 25px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .parallax ul
+    {
+        margin-left: -6%; 
+        margin-top: 1%;
+    }
 }
